@@ -83,7 +83,7 @@ class Main extends Sprite
 		#end
 		addChild(game);
 		
-		ar ourSource:String = "assets/videos/DaWeirdVid/dontDelete.webm";
+		var ourSource:String = "assets/videos/DaWeirdVid/dontDelete.webm";
 		#if web
         var str1:String = "HTML CRAP";
         var vHandler = new VideoHandler();
@@ -102,7 +102,7 @@ class Main extends Sprite
         addChild(webmHandle.webm);
         GlobalVideo.setWebm(webmHandle);
         #end
-		
+
 		#if !mobile
 		fpsCounter = new FPS(10, 3, 0xFFFFFF);
 		addChild(fpsCounter);

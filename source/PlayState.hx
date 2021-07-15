@@ -387,12 +387,12 @@ class PlayState extends MusicBeatState
 
 		switch(stageCheck)
 		{
-			case 'halloween': 
+			case 'dude': 
 			{
 				curStage = 'spooky';
 				halloweenLevel = true;
 
-				var hallowTex = Paths.getSparrowAtlas('halloween_bg','week2');
+				var hallowTex = Paths.getSparrowAtlas('halloween_bg','week1');
 
 				halloweenBG = new FlxSprite(-200, -100);
 				halloweenBG.frames = hallowTex;
@@ -3939,13 +3939,6 @@ class PlayState extends MusicBeatState
 						trainStart();
 					}
 				}
-		}
-
-		if (isHalloween && FlxG.random.bool(10) && curBeat > lightningStrikeBeat + lightningOffset)
-		{
-			if(FlxG.save.data.distractions){
-				lightningStrikeShit();
-			}
 		}
 	}
 
