@@ -3851,7 +3851,12 @@ class PlayState extends MusicBeatState
 				FlxG.camera.zoom += 0.015;
 				camHUD.zoom += 0.03;
 			}
-	
+
+			if (curSong.toLowerCase() == 'griller' && camZooming && FlxG.camera.zoom < 1.35) {
+					FlxG.camera.zoom += 0.015;
+					camHUD.zoom += 0.03;
+				}
+
 			if (camZooming && FlxG.camera.zoom < 1.35 && curBeat % 4 == 0)
 			{
 				FlxG.camera.zoom += 0.015;

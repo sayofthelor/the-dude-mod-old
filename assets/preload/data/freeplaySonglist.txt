@@ -1,4 +1,4 @@
 Tutorial:gf:1
-Reckoning:gf:1
-Concussion:gf:1
-Griller:gf:1
+Reckoning:dude:1
+Concussion:dude:1
+Griller:dude:1
