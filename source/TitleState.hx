@@ -159,7 +159,7 @@ class TitleState extends MusicBeatState
 			// music.play();
 			FlxG.sound.playMusic(Paths.music('freakyMenu'), 0);
 
-			FlxG.sound.music.fadeIn(4, 0, 0.7);
+			FlxG.sound.music.fadeIn(0, 0, 0.7);
 		}
 
 		Conductor.changeBPM(102);
@@ -388,9 +388,13 @@ class TitleState extends MusicBeatState
 
 		switch (curBeat)
 		{
-			case 2:
-				createCoolText(['macaroni boi', 'geno', 'sayofthelor']);
+			case 0:
+				createCoolText(['macaroni boi']);
 			// credTextShit.visible = true;
+			case 1:
+			    addMoreText('geno');
+            case 2:
+                addMoreText('sayofthelor");
 			case 3:
 				addMoreText('present');
 			// credTextShit.text += '\npresent...';
