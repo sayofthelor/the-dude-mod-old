@@ -1,4 +1,4 @@
 Tutorial:gf:1
-Reckoning:dude:1
 Concussion:dude:1
+Reckoning:dude:!
 Griller:dude:1
