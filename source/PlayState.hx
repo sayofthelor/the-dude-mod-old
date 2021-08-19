@@ -994,12 +994,21 @@ class PlayState extends MusicBeatState
 		healthBar = new FlxBar(healthBarBG.x + 4, healthBarBG.y + 4, RIGHT_TO_LEFT, Std.int(healthBarBG.width - 8), Std.int(healthBarBG.height - 8), this,
 			'health', 0, 2);
 		healthBar.scrollFactor.set();
-		healthBar.createFilledBar(0xFFFF0000, 0xFF66FF33);
+		switch(curSong.toLowerCase()){
+			case 'griller':
+			  healthBar.createFilledBar(0xFFC1CBFC, 0xFF5EB4EF);
+			case 'concussion':
+			  healthBar.createFilledBar(0xFFFE4B4B, 0xFF5EB4EF);
+			case 'reckoning':
+			  healthBar.createFilledBar(0xFFFE4B4B, 0xFF5EB4EF);
+			default:
+			  healthBar.createFilledBar(0xFFFF0000, 0xFF66FF33);
+		}
 		// healthBar
 		add(healthBar);
 
 		// Add Kade Engine watermark
-		kadeEngineWatermark = new FlxText(4,healthBarBG.y + 50,0,SONG.song + " - " + CoolUtil.difficultyFromInt(storyDifficulty) + (Main.watermarks ? " | KE " + MainMenuState.kadeEngineVer : ""), 16);
+		kadeEngineWatermark = new FlxText(4,healthBarBG.y + 50,0,SONG.song + " - " + CoolUtil.difficultyFromInt(storyDifficulty) + (Main.watermarks ? " | Dude " + "Indev 1a (KE 1.5.4)" : ""), 16);
 		kadeEngineWatermark.setFormat(Paths.font("vcr.ttf"), 16, FlxColor.WHITE, RIGHT, FlxTextBorderStyle.OUTLINE,FlxColor.BLACK);
 		kadeEngineWatermark.scrollFactor.set();
 		add(kadeEngineWatermark);
