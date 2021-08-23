@@ -227,6 +227,26 @@ class Character extends FlxSprite
 				addOffset("singLEFT", -30);
 				addOffset("singDOWN", -40, -94);
 				playAnim('idle');
+
+
+			case 'bot':
+				tex = Paths.getSparrowAtlas('characters/bot');
+				frames = tex;
+				animation.addByPrefix('idle', 'robot idle', 24, false);
+				animation.addByPrefix('singUP', 'robot up', 24, false);
+				animation.addByPrefix('singDOWN', 'robot down', 24, false);
+				animation.addByPrefix('singLEFT', 'robot left', 24, false);
+				animation.addByPrefix('singRIGHT', 'robot right', 24, false);
+
+				addOffset('idle');
+				addOffset("singUP", 42, 11);
+				addOffset("singRIGHT", 20, -5);
+				addOffset("singLEFT", 24, -5);
+				addOffset("singDOWN", 10, -3);
+				playAnim('idle');
+
+
+
 			case 'pico':
 				tex = Paths.getSparrowAtlas('characters/Pico_FNF_assetss');
 				frames = tex;
