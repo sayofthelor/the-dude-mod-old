@@ -1004,6 +1004,8 @@ class PlayState extends MusicBeatState
 			  healthBar.createFilledBar(0xFFFE4B4B, 0xFF5EB4EF);
 			case 'reckoning':
 			  healthBar.createFilledBar(0xFFFE4B4B, 0xFF5EB4EF);
+			case "proto":
+			  healthBar.createFilledBar(0xFFFE4B4B, 0xFFC1CBFC);
 			default:
 			  healthBar.createFilledBar(0xFFFF0000, 0xFF66FF33);
 		}
