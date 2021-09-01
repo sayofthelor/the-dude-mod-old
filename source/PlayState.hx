@@ -1021,7 +1021,8 @@ class PlayState extends MusicBeatState
 
 		// if (PlayStateChangeables.useDownscroll)
 		//  	kadeEngineWatermark.y = FlxG.height * 0.9 + 45;
-		if(FlxG.save.data.score) {
+		// change score bar like impostor but with a toggle
+		if(FlxG.save.data.showScore) {
 		scoreTxt = new FlxText(FlxG.width / 2 - 235, healthBarBG.y + 50, 0, "", 20);
 
 		scoreTxt.screenCenter(X);
