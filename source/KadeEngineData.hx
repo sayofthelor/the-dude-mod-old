@@ -64,9 +64,6 @@ class KadeEngineData
 		if (FlxG.save.data.distractions == null)
 			FlxG.save.data.distractions = true;
 
-		if (FlxG.save.data.showScore == null)
-			FlxG.save.data.showScore = false;
-
 		if (FlxG.save.data.flashing == null)
 			FlxG.save.data.flashing = true;
 
