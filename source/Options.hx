@@ -178,7 +178,7 @@ class ShowScoreBar extends Option
 
 	private override function updateDisplay():String
 	{
-		return FlxG.save.data.ghost ? "Show Score Bar" : "Do not Show Score Bar";
+		return FlxG.save.data.showScore ? "Show Score Bar" : "Do not Show Score Bar";
 	}
 }
 
