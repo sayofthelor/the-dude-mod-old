@@ -40,7 +40,7 @@ class OptionsMenu extends MusicBeatState
 			new CustomizeGameplay("Drag'n'Drop Gameplay Modules around to your preference")
 		]),
 		new OptionCategory("Appearance", [
-			new ShowScoreBar("Show the score bar on the health bar."),
+			new ShowScoreBar("Show the score bar on the health bar.")
 			new DistractionsAndEffectsOption("Toggle stage distractions that can hinder your gameplay."),
 			new CamZoomOption("Toggle the camera zoom in-game."),
 			#if desktop
